@@ -1,0 +1,47 @@
+﻿<Window x:Class="IPChange.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IPChange"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="IP 주소 변경" HorizontalAlignment="Left" Height="25" Margin="636,290,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click"/>
+        <TextBox x:Name="IPAddress1" HorizontalAlignment="Left" Height="25" Margin="163,290,0,0" TextWrapping="Wrap" Text="192" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="IPAddress2" HorizontalAlignment="Left" Height="25" Margin="280,290,0,0" TextWrapping="Wrap" Text="168" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="IPAddress3" HorizontalAlignment="Left" Height="25" Margin="401,290,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="IPAddress4" HorizontalAlignment="Left" Height="25" Margin="520,290,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="SubNetMask1" HorizontalAlignment="Left" Height="25" Margin="163,327,0,0" TextWrapping="Wrap" Text="255" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="SubNetMask2" HorizontalAlignment="Left" Height="25" Margin="280,327,0,0" TextWrapping="Wrap" Text="255" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="SubNetMask3" HorizontalAlignment="Left" Height="25" Margin="401,327,0,0" TextWrapping="Wrap" Text="255" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="SubNetMask4" HorizontalAlignment="Left" Height="25" Margin="520,327,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="GateWay1" HorizontalAlignment="Left" Height="25" Margin="163,366,0,0" TextWrapping="Wrap" Text="192" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="GateWay2" HorizontalAlignment="Left" Height="25" Margin="280,366,0,0" TextWrapping="Wrap" Text="168" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="GateWay3" HorizontalAlignment="Left" Height="25" Margin="401,366,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="GateWay4" HorizontalAlignment="Left" Height="25" Margin="519,366,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="100"/>
+        <Label Content="IPAddress" HorizontalAlignment="Left" Height="25" Margin="66,287,0,0" VerticalAlignment="Top" Width="85"/>
+        <Label Content="SubNetMask" HorizontalAlignment="Left" Height="25" Margin="62,326,0,0" VerticalAlignment="Top" Width="79" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.843"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.485"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="GateWay" HorizontalAlignment="Left" Height="25" Margin="66,363,0,0" VerticalAlignment="Top" Width="75"/>
+        <ListView x:Name="AdapterListView" HorizontalAlignment="Left" Height="245" Margin="66,23,0,0" VerticalAlignment="Top" Width="554" MouseDoubleClick="AdapterListView_MouseDoubleClick">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="네트워크 이름" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="연결에 사용할 장치" DisplayMemberBinding="{Binding Device}" />
+                    <GridViewColumn Header="네트워크 연결 상태" DisplayMemberBinding="{Binding NetWork}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="목록 새로고침" HorizontalAlignment="Left" Height="26" Margin="636,23,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

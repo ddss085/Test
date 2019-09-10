@@ -1,0 +1,15 @@
+C:\Users\WTA\source\repos\IPChange\IPChange\bin\Debug\IPChange.exe.config
+C:\Users\WTA\source\repos\IPChange\IPChange\bin\Debug\IPChange.exe
+C:\Users\WTA\source\repos\IPChange\IPChange\bin\Debug\IPChange.pdb
+C:\Users\WTA\source\repos\IPChange\IPChange\obj\Debug\MainWindow.g.cs
+C:\Users\WTA\source\repos\IPChange\IPChange\obj\Debug\App.g.cs
+C:\Users\WTA\source\repos\IPChange\IPChange\obj\Debug\IPChange_MarkupCompile.cache
+C:\Users\WTA\source\repos\IPChange\IPChange\obj\Debug\IPChange_MarkupCompile.lref
+C:\Users\WTA\source\repos\IPChange\IPChange\obj\Debug\MainWindow.baml
+C:\Users\WTA\source\repos\IPChange\IPChange\obj\Debug\IPChange.g.resources
+C:\Users\WTA\source\repos\IPChange\IPChange\obj\Debug\IPChange.Properties.Resources.resources
+C:\Users\WTA\source\repos\IPChange\IPChange\obj\Debug\IPChange.csproj.GenerateResource.cache
+C:\Users\WTA\source\repos\IPChange\IPChange\obj\Debug\IPChange.csproj.CoreCompileInputs.cache
+C:\Users\WTA\source\repos\IPChange\IPChange\obj\Debug\IPChange.exe
+C:\Users\WTA\source\repos\IPChange\IPChange\obj\Debug\IPChange.pdb
+C:\Users\WTA\source\repos\IPChange\IPChange\obj\Debug\IPChange.csprojAssemblyReference.cache
